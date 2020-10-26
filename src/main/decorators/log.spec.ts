@@ -37,7 +37,7 @@ describe('LogController Decorator', () => {
     const httpRequest = {
       body: {
         name: 'any_name',
-        email: 'any_email',
+        email: 'any_mail@mail.com',
         password: 'any_password',
         passwordConfirmation: 'any_password'
       }
