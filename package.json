@@ -44,6 +44,7 @@
     "jest": "^26.2.2",
     "jest-cli": "^26.2.2",
     "lint-staged": "^10.2.11",
+    "mockdate": "^3.0.2",
     "rimraf": "^2.6.3",
     "supertest": "^5.0.0",
     "ts-jest": "^26.1.4",
