@@ -53,9 +53,9 @@ describe('LoadSurveyResult Controller', () => {
     expect(httpResponse).toEqual(serverError(new Error()))
   })
 
-  test('should call LoadSurveyResult if correct value', async () => {
+  test('should call LoadSurveyResult with correct value', async () => {
     const { sut, loadSurveyResultStub } = makeSut()
-    const loadSpy = jest.spyOn(loadSurveyResultStub, 'loadSurveyById')
+    const loadSpy = jest.spyOn(loadSurveyResultStub, 'load')
     await sut.handle(makeFakeRequest())
     expect(loadSpy).toHaveBeenCalledWith('any_id', 'any_account_id')
   })
